@@ -34,7 +34,7 @@ fn main() -> Result<std::process::ExitCode, std::io::Error> {
         eprintln!("A crab shouldn't sound like a cat.")
     };
 
-    // clean message, assuming it does not contain multiple lines 
+    // clean message, assuming it does not contain multiple lines
     let message = message.replace('\n', "");
 
     let eye = if options.dead {
@@ -43,7 +43,7 @@ fn main() -> Result<std::process::ExitCode, std::io::Error> {
         "o".green()
     };
 
-    println!("{}", message.bright_blue().on_blue());
+    println!("{}", message.red());
 
     println!("{}", r"    \".truecolor(255, 165, 0));
     println!("{}", "     ,__,".truecolor(255, 165, 0));
